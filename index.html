@@ -2,60 +2,126 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style/Index.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="script.js" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
 </head>
 
 <body>
+  <header class="header">
+    <div class="inner_header">
+      <div class="logo">
+        <h1>
+          <a href="index.html"><b>OSINT<span> Academy</span></b></a>
+        </h1>
+      </div>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Resources</a></li>
+          <li><a href="#">Tools</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    
+  <section class="main">
+    <div class="inner_hero">
+      <h1 class="quote">
+        "The quieter you become, the more you are able to hear"<b><br />KALI</b>
+      </h1>
+      <p>
+        Explore the power of open-source intelligence and ethical hacking
+        tools.
+      </p>
+      <a href="#"><button class="btn" type="button">
+          <span><b>Explore Tools</b></span>
+        </button>
+      </a>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="content">
+      <h2>About Our Academy</h2>
+      <p>OSINT Academy provides comprehensive training in open-source intelligence gathering and ethical security
+        practices. Learn from industry experts and master the tools used by professionals worldwide.</p>
+    </div>
+  </section>
+
+  <section class="resources">
+    <div class="content">
+      <h2>Resources & Learning</h2>
+      <p>Access our extensive library of tutorials, documentation, and hands-on labs. Build your skills progressively
+        with our structured learning paths designed for beginners to advanced practitioners.</p>
+    </div>
+  </section>
+
+
+  <section class="cards">
+    <h2 class="section-title">Security Tools</h2>
+
+    <div class="card-container">
+      <div class="card" style="background-image: url('Images/Maltego-Logo.jpg')">
+        <h2>Maltego</h2>
+        <p>Maps connections visually</p>
+      </div>
+      <div class="card" style="background-image: url('oogway.jpg')">
+        <h2>Shodan</h2>
+        <p>Finds internet‑exposed devices</p>
+      </div>
+      <div class="card" style="background-image: url('tai-lung.jpg')">
+        <h2>TheHarvester</h2>
+        <p>Gathers emails and subdomains</p>
+      </div>
+      <div class="card" style="background-image: url('shen.jpg')">
+        <h2>Hunter.io</h2>
+        <p>Finds and verifies professional emails</p>
+      </div>
+      <div class="card" style="background-image: url('po.jpg')">
+        <h2>Recon‑ng</h2>
+        <p>Automates OSINT recon</p>
+      </div>
+      <div class="card" style="background-image: url('po.jpg')">
+        <h2>SpiderFoot</h2>
+        <p>Scans for public exposure automatically.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="contact">
+    <div class="content">
+      <h2>Countact Us</h2>
+      <p>Access our extensive library of tutorials, documentation, and hands-on labs. Build your skills progressively
+        with our structured learning paths designed for beginners to advanced practitioners.</p>
+    </div>
+  </section>
+
+
+  <section class="aboutdev">
+    <div class="content">
+      <h2>Developed by</h2>
+      <p>Access our extensive library of tutorials, documentation, and hands-on labs. Build your skills progressively
+        with our structured learning paths designed for beginners to advanced practitioners.</p>
+    </div>
+  </section>
 
 
 
-     <header class="header">
-        <div class="inner_header">
-            <div class="logo">
-                <h1>
-                    <a href="index.html"><b>OSINT<span> Academy</span></b></a>
-                </h1>
-            </div>
-            <nav>
-                <ul class="nav-list">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Resources</a></li>
-                    <li><a href="tools.html">Tools</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
 
 
-    <section class="main">
-        <div class="inner_hero">
-            <h1 class="quote">"The quieter you become, the more you are able to hear"<b><br>KALI</b></h1>
-            <p>Explore the power of open-source intelligence and ethical hacking tools.</p>
-            <a href="#"><button class="btn" type="button"><span><b>Explore Tools</b></span></button> </a>
-        </div>
-
-
-    </section>
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
-    <script src="js/Index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
