@@ -86,18 +86,39 @@ body {
     padding: 50px 0;
 }
 
-.inner_hero {
+/* shapes background */
+
+#background {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: rgb(250, 233, 203);
+    top: 30px;
+    left: 0px;
+    width: 100%;
+    height: 110%;
+    z-index: 1;
+}
+
+.inner_hero {
+  position: relative;
+  z-index: 10;
+  top: 50%;
+  transform: translateY(0%);
+  text-align: center;
+  color: rgb(250, 233, 203);
 }
 
 .inner_hero h1 {
-    font-size: 3rem;
+    font-size: 8rem;
     margin-bottom: 20px;
+    font-family: 'Pacifico', cursive;
+;
+}
+
+.inner_hero h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: 'Pacifico', cursive;
+    letter-spacing: 2px;
+;
 }
 
 .inner_hero p {
@@ -154,7 +175,6 @@ body {
     opacity: 0.9;
 }
 
-
 /* Resourses  */
 
 .resources {
@@ -186,111 +206,168 @@ body {
 
 /* Card Container  */
 
+
 .cards {
-    position: relative;
-    min-height: 80vh;
-    width: 100%;
-    padding: 50px 0;
-    background: rgb(244, 213, 159);
-    border-radius: 50px;
+  position: relative;
+  min-height: 80vh;
+  width: 100%;
+  padding: 50px 0;
+  background: rgb(244, 213, 159);
+  border-radius: 50px;
 }
 
 .cards h2.section-title {
-    text-align: center;
-    font-size: 2.5rem;
-    color: rgb(61, 73, 58);
-    margin-bottom: 60px;
-    font-weight: 700;
-    animation: fadeInUp 1s ease;
+  text-align: center;
+  font-size: 2.5rem;
+  color: rgb(61, 73, 58);
+  margin-bottom: 60px;
+  font-weight: 700;
+  animation: fadeInUp 1s ease;
 }
 
 .card-container {
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    gap: 15px;
-    width: 70%;
-    max-width: 1200px;
-    height: 400px;
-    margin: 50px auto;
-    padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 15px;
+  width: 70%;
+  max-width: 1200px;
+  height: 400px;
+  margin: 50px auto;
+  padding: 0 20px;
 }
 
+/* Cards - Updated to fade the background image, not the card itself */
 .card {
-    flex: 1;
-    min-width: 80px;
-    height: 100%;
-    border-radius: 20px;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    transition: all 0.999s cubic-bezier(0.4, 0, 0.2, 1);
-    cursor: pointer;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  flex: 1;
+  min-width: 80px;
+  height: 100%;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  transition: all 0.999s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* add pseudo-element to fade the background image */
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 2;
+  transition: opacity 0.5s ease;
+  opacity: 1;
+}
+
+/* on hover, fade out the image overlay to reveal the background image */
+.card:hover::after {
+  opacity: 0;
 }
 
 .card::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 50%;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
-    opacity: 0;
-    transition: opacity 0.4s ease;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  opacity: 0;
+  transition: opacity 0.4s ease;
 }
 
 .card:hover::before {
-    opacity: 1;
+  opacity: 1;
 }
 
 .card h2 {
-    position: absolute;
-    bottom: 60px;
-    left: 20px;
-    color: white;
-    font-size: 1.8rem;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: all 0.4s ease 0.1s;
-    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.9);
-    z-index: 2;
-    margin: 0;
+  position: absolute;
+  bottom: 60px;
+  left: 20px;
+  color: white;
+  font-size: 1.8rem;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.4s ease 0.1s;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.9);
+  z-index: 3;
+  margin: 0;
 }
 
 .card p {
-    position: absolute;
-    bottom: 30px;
-    left: 20px;
-    right: 20px;
-    color: white;
-    font-size: 1rem;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: all 0.4s ease 0.2s;
-    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.9);
-    z-index: 2;
-    margin: 0;
+  position: absolute;
+  bottom: 30px;
+  left: 20px;
+  right: 20px;
+  color: white;
+  font-size: 1rem;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.4s ease 0.2s;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.9);
+  z-index: 3;
+  margin: 0;
 }
 
 .card:hover {
-    flex: 2.5;
-    border: 3px solid gold;
-    transform: translateY(-5px);
-    box-shadow: 0 15px 40px rgba(255, 215, 0, 0.3);
+  flex: 2.5;
+  border: 3px solid gold;
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(255, 215, 0, 0.3);
+  opacity: 1;
+}
+
+/* Hide vertex text on hover and show full content */
+.card:hover .card-vertices {
+  opacity: 0;
 }
 
 .card:hover h2,
 .card:hover p {
-    opacity: 1;
-    transform: translateY(0);
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .card-container:hover .card:not(:hover) {
-    flex: 0.8;
-    filter: brightness(0.7);
+  flex: 0.8;
+  /* filter: brightness(0.7); */
+}
+
+/* Vertical before hover */
+.card .vertical-name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    color: wheat;
+    font-weight: 900;
+    font-size: 2rem;
+    opacity: 1;
+    transition: all 0.4s ease;
+    white-space: nowrap;
+}
+
+/* Hide vertical on hover */
+.card:hover .vertical-name {
+    opacity: 0;
+    transform: translate(-50%, -50%) rotate(-90deg) scale(0.9);
+}
+
+/* Show normal horizontal name on hover */
+.card:hover h2 {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 
@@ -323,12 +400,11 @@ body {
     line-height: 1.8;
 }
 
-
 /* About Develepors */
 
 .aboutdev {
     position: relative;
-    min-height: 70vh;
+    min-height: 60vh;
     width: 100%;
     padding: 50px 0;
     background: rgb(244, 213, 159);
@@ -353,3 +429,59 @@ body {
     line-height: 1.8;
     opacity: 0.9;
 }
+
+
+@keyframes floatUpDown {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes floatDownUp {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(20px);
+  }
+}
+
+@keyframes floatSideways {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(15px);
+  }
+}
+
+/* added pulse animation for connection lines in OSINT background */
+@keyframes pulse {
+  0%,
+  100% {
+    stroke-opacity: 0.15;
+  }
+  50% {
+    stroke-opacity: 0.35;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+
+
