@@ -1,9 +1,32 @@
+*{
+  text-decoration: none !important;
+ }
 .tools-page {
-  background: #0f172a;
+  background: linear-gradient(to left,#010d42,#17141b);
   color: white;
   min-height: 100vh;
 }
 
+.header{
+  width: 100;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+  padding: 50px 60px;
+  z-index: 100;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* li a{
+  text-decoration: none;
+} */
+.nav-list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  /* flex-direction: row */
+}
 .card-container{
   display: flex;
   flex-wrap: wrap ;
