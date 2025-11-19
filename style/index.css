@@ -350,7 +350,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(-90deg);
-    color: wheat;
+    color: black;
     font-weight: 900;
     font-size: 2rem;
     opacity: 1;
