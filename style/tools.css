@@ -6,14 +6,19 @@
   color: white;
   min-height: 100vh;
 }
-a{
+
+
+ a{
   color: white;
+  transition: all 0.2s;
 }
-a:hover{
+nav a:hover{
   display: block;
-  background-color: aliceblue;
-  color: blue;
-  border-radius: 5px;
+  /* background-color: aliceblue; */
+  color: #0D7CFF;
+   text-shadow: 0 0 10px #0D7CFF, 0 0 20px #0D7CFF, 0 0 30px #0D7CFF, 0 0 40px #0D7CFF;
+  /* border-radius: 5px; */
+  font-weight: bold;
 }
 a:visited{
   font-weight: bold;
@@ -29,6 +34,17 @@ a:visited{
   align-items: center;
   justify-content: space-between;
   
+}
+nav{
+  background-color: #2f004e;
+  
+   border-radius: 10px;
+  height: 40px;
+  width: 100%;
+  margin: 10px;
+  padding: 5px;
+  justify-content: center;
+  text-align: center;
 }
 
 .nav-list{
