@@ -1,294 +1,433 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OSINT Academy</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>OSINT Academy</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style/index.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  <body>
+    <!-- The video -->
+    <video autoplay muted loop id="myVideo">
+      <source src="background/Untitled design.mp4" type="video/mp4" />
+    </video>
 
-</head>
+    <header class="header">
+      <div class="logo">
+        <h1>
+          <a href="index.html"
+            ><b>OSINT<span> Academy</span></b></a
+          >
+        </h1>
+      </div>
+      <div class="mobile-menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      
+      <div class="inner_header">
+        <nav>
+          <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="tools.html">Tools</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+      <a href="#"><button class="contact-btn">Let's Talk 📞</button></a>
+    </header>
 
-<body>
-  <!-- The video -->
-  <video autoplay muted loop id="myVideo">
-    <source src="background/Untitled design.mp4" type="video/mp4" />
-  </video>
+    <section class="main">
+      <div class="inner_hero">
+        <h1 class="quote">
+          What Is OSINT?<b><br /></b>
+        </h1>
+        <h2>An Introduction to Open-Source Intelligence</h2>
+        <p>
+          OSINT (Open-Source Intelligence) is the process of collecting and
+          analyzing publicly available information from the internet to gain
+          useful insights for investigations and security.
+        </p>
+        <a href="#"
+          ><button class="btn" type="button">
+            <span><b>Explore Tools</b></span>
+          </button>
+        </a>
+      </div>
+    </section>
 
-  <header class="header">
-    <div class="logo">
-      <h1>
-        <a href="index.html"><b>OSINT<span> Academy</span></b></a>
-      </h1>
-    </div>
-    <div class="inner_header">
-      <nav>
-        <ul class="nav-list">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="resources.html">Resources</a></li>
-          <li><a href="tools.html">Tools</a></li>
-          <li><a href="#contact">Contact Us</a></li>
-        </ul>
-      </nav>
-    </div>
-    <a href="#"><button class="contact-btn">Let's Talk 📞</button></a>
-  </header>
+    <section class="about" id="about">
+      <h2>About Our Academy</h2>
+      <div class="about-container">
+        <div class="about-text">
+          <h3>Learn From Industry Experts</h3>
+          <p>
+            OSINT Academy provides comprehensive training in open-source
+            intelligence gathering and ethical security practices. Our
+            curriculum is designed by professionals with decades of combined
+            experience in cybersecurity, digital forensics, and intelligence
+            operations.
+          </p>
+          <p>
+            We focus on hands-on, practical learning that you can apply
+            immediately. From beginner fundamentals to advanced techniques, our
+            structured learning paths guide you through every step of your OSINT
+            journey.
+          </p>
+          <p>
+            Join thousands of students worldwide who have transformed their
+            careers through our cutting-edge curriculum and industry
+            partnerships. Access lifetime resources and community support.
+          </p>
+        </div>
+        <div class="about-image">
+          <img src="Images/about.png" alt="Team Learning" />
+        </div>
+      </div>
+    </section>
 
-  <section class="main">
-    <div class="inner_hero">
-      <h1 class="quote">
-        What Is OSINT?<b><br /></b>
-      </h1>
-      <h2>Features</h2>
-      <p>
-        Explore the power of open-source intelligence and ethical hacking
-        tools.
-      </p>
-      <a href="#"><button class="btn" type="button">
+    <section class="resources">
+      <h2>Resources & Learning</h2>
+      <section class="res">
+        <div class="cont">
+          <h3>OSINT Tools & Platforms</h3>
+          <p>
+            OSINT Academy provides access to a curated list of powerful tools
+            that form the backbone of open-source investigations. These include
+            Maltego for visual link analysis, Shodan for discovering exposed
+            devices, Recon-ng for automated reconnaissance, SpiderFoot with 200+
+            modules for deep scanning, TheHarvester for collecting emails and
+            subdomains, and Hunter.io for accurate email discovery. Each tool is
+            selected to help learners understand real-world OSINT operations
+            with accuracy and efficiency.
+          </p>
+        </div>
+
+        <div class="cont">
+          <h3>Cyber Intelligence Guides</h3>
+          <p>
+            Our academy offers detailed and easy-to-follow cyber intelligence
+            guides that explain how professional investigators gather and
+            analyze information. These guides cover domain profiling, social
+            media intelligence extraction, dark-web monitoring, fake account
+            identification, IP tracking, WHOIS and DNS lookups, and metadata
+            analysis. The tutorials are written to support both beginners and
+            advanced learners in applying OSINT techniques confidently.
+          </p>
+        </div>
+
+        <div class="cont">
+          <h3>Learning Materials</h3>
+          <p>
+            OSINT Academy provides high-quality downloadable learning materials
+            to support structured study. These include OSINT cheat sheets,
+            frameworks, investigation flowcharts, case study summaries, and
+            interview preparation notes. Each resource is designed to simplify
+            complex concepts and help learners revise effectively, making it
+            easier to build a solid foundation in intelligence gathering.
+          </p>
+        </div>
+      </section>
+
+      <section class="res">
+        <div class="cont">
+          <h3>Video Lectures</h3>
+          <p>
+            We offer expert-led video lectures that bring OSINT concepts to
+            life. These professional recordings explain core OSINT techniques,
+            threat intelligence principles, real-world investigation
+            walkthroughs, and live demonstrations of popular OSINT tools. The
+            videos are clear, practical, and suitable for learners who prefer
+            visual and hands-on learning methods.
+          </p>
+        </div>
+
+        <div class="cont">
+          <h3>Practical Assignments</h3>
+          <p>
+            To strengthen real investigative skills, OSINT Academy provides
+            practical assignments that simulate real-world scenarios. Students
+            engage in tasks such as website fingerprinting, company data
+            gathering, email tracing, social media profiling, and metadata
+            extraction. These activities help learners apply theoretical
+            knowledge and develop confidence in handling real OSINT challenges.
+          </p>
+        </div>
+
+        <div class="cont">
+          <h3>Certifications & Exams</h3>
+          <p>
+            OSINT Academy offers structured assessments and certification
+            programs that test students' understanding and practical skill
+            levels. These certifications validate a learner's proficiency in
+            open-source intelligence, threat analysis, and digital
+            investigation, making them highly valuable for career development in
+            cybersecurity and digital forensics.
+          </p>
+        </div>
+      </section>
+    </section>
+
+    <section class="cards">
+      <h2 class="section-title">Security Tools</h2>
+
+      <div class="card-container">
+        <div
+          class="card"
+          id="img"
+          style="background-image: url('Images/Maltego-Logo.jpg')"
+        >
+          <span class="vertical-name">Maltego</span>
+
+          <h2>Maltego</h2>
+          <p>Maps connections visually</p>
+        </div>
+        <div
+          class="card"
+          id="img"
+          style="background-image: url('Images/shodan.jpg')"
+        >
+          <span class="vertical-name">Shodan</span>
+
+          <h2>Shodan</h2>
+          <p>Finds internet‑exposed devices</p>
+        </div>
+        <div
+          class="card"
+          id="img"
+          style="background-image: url('Images/harvester.jpg')"
+        >
+          <span class="vertical-name">TheHarvester</span>
+
+          <h2>TheHarvester</h2>
+          <p>Gathers emails and subdomains</p>
+        </div>
+        <div
+          class="card"
+          id="img"
+          style="background-image: url('Images/hunter.jpg')"
+        >
+          <span class="vertical-name">Hunter.io</span>
+
+          <h2>Hunter.io</h2>
+          <p>Finds and verifies professional emails</p>
+        </div>
+        <div
+          class="card"
+          id="img"
+          style="background-image: url('Images/recon.png')"
+        >
+          <span class="vertical-name">Recon‑ng</span>
+
+          <h2>Recon‑ng</h2>
+          <p>Automates OSINT recon</p>
+        </div>
+        <div
+          class="card"
+          id="img"
+          style="background-image: url('Images/spider.jpg')"
+        >
+          <span class="vertical-name">SpiderFoot</span>
+
+          <h2>SpiderFoot</h2>
+          <p>Scans for public exposure automatically.</p>
+        </div>
+      </div>
+      <a href="#"
+        ><button class="btn2" type="button">
           <span><b>Explore Tools</b></span>
         </button>
-        <div class="cardfront">
-          <h2>Protection</h2>
-          <h2>Security</h2>
-          <h2>Verification</h2>
-        </div>
       </a>
-    </div>
-  </section>
+    </section>
 
-  <section class="about" id="about">
-    <h2>About Our Academy</h2>
-    <div class="about-container">
-      <div class="about-text">
-        <h3>Learn From Industry Experts</h3>
-        <p>
-          OSINT Academy provides comprehensive training in open-source
-          intelligence gathering and ethical security practices. Our
-          curriculum is designed by professionals with decades of combined
-          experience in cybersecurity, digital forensics, and intelligence
-          operations.
-        </p>
-        <p>
-          We focus on hands-on, practical learning that you can apply
-          immediately. From beginner fundamentals to advanced techniques, our
-          structured learning paths guide you through every step of your OSINT
-          journey.
-        </p>
-        <p>
-          Join thousands of students worldwide who have transformed their
-          careers through our cutting-edge curriculum and industry
-          partnerships. Access lifetime resources and community support.
-        </p>
-      </div>
-      <div class="about-image">
-        <img src="Images/about.png" alt="Team Learning" />
-      </div>
-    </div>
-  </section>
-
-  <section class="resources">
-    <div class="content">
-      <h2>Resources & Learning</h2>
-      <p>
-        Access our extensive library of tutorials, documentation, and hands-on
-        labs. Build your skills progressively with our structured learning
-        paths designed for beginners to advanced practitioners.
-      </p>
-    </div>
-  </section>
-
-  <section class="cards">
-    <h2 class="section-title">Security Tools</h2>
-
-    <div class="card-container">
-      <div class="card" id="img" style="background-image: url('Images/Maltego-Logo.jpg')">
-        <span class="vertical-name">Maltego</span>
-
-        <h2>Maltego</h2>
-        <p>Maps connections visually</p>
-      </div>
-      <div class="card" id="img" style="background-image: url('Images/shodan.jpg')">
-        <span class="vertical-name">Shodan</span>
-
-        <h2>Shodan</h2>
-        <p>Finds internet‑exposed devices</p>
-      </div>
-      <div class="card" id="img" style="background-image: url('Images/harvester.jpg')">
-        <span class="vertical-name">TheHarvester</span>
-
-        <h2>TheHarvester</h2>
-        <p>Gathers emails and subdomains</p>
-      </div>
-      <div class="card" id="img" style="background-image: url('Images/hunter.jpg')">
-        <span class="vertical-name">Hunter.io</span>
-
-        <h2>Hunter.io</h2>
-        <p>Finds and verifies professional emails</p>
-      </div>
-      <div class="card" id="img" style="background-image: url('Images/recon.png')">
-        <span class="vertical-name">Recon‑ng</span>
-
-        <h2>Recon‑ng</h2>
-        <p>Automates OSINT recon</p>
-      </div>
-      <div class="card" id="img" style="background-image: url('Images/spider.jpg')">
-        <span class="vertical-name">SpiderFoot</span>
-
-        <h2>SpiderFoot</h2>
-        <p>Scans for public exposure automatically.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="contact" id="contact">
-    <h2>Get In Touch</h2>
-    <div class="contact-container">
-      <div class="contact-image">
-        <img src="Images/contact.png" alt="Contact Support" />
-      </div>
-      <div>
-        <h3 style="
+    <section class="contact" id="contact">
+      <h2>Get In Touch</h2>
+      <div class="contact-container">
+        <div class="contact-image">
+          <img src="Images/contact.png" alt="Contact Support" />
+        </div>
+        <div>
+          <h3
+            style="
               font-size: 1.5rem;
               margin-bottom: 1.5rem;
               color: var(--accent-pink);
-            ">
-          Have Questions?
-        </h3>
-        <p style="color: var(--text-secondary); margin-bottom: 1.5rem">
-          Our support team is ready to help you get started on your OSINT
-          journey. Fill out the form and we'll respond within 24 hours.
-        </p>
-        <form action="#" method="POST" class="contact-form">
-          <input type="hidden" name="access_key" value="#" />
+            "
+          >
+            Have Questions?
+          </h3>
+          <p style="color: var(--text-secondary); margin-bottom: 1.5rem">
+            Our support team is ready to help you get started on your OSINT
+            journey. Fill out the form and we'll respond within 24 hours.
+          </p>
+          <form action="#" method="POST" class="contact-form">
+            <input type="hidden" name="access_key" value="#" />
 
-          <div class="form-group">
-            <label>Full Name</label>
-            <input type="text" placeholder="John Doe" required />
-          </div>
-          <div class="form-group">
-            <label>Email Address</label>
-            <input type="email" placeholder="your@email.com" required />
-          </div>
-          <div class="form-group">
-            <label>Message</label>
-            <textarea placeholder="Tell us about your interest in OSINT..." required></textarea>
-          </div>
-          <button type="submit" class="submit-btn">Send Message</button>
-        </form>
-        <p style="
+            <div class="form-group">
+              <label>Full Name</label>
+              <input type="text" placeholder="John Doe" required />
+            </div>
+            <div class="form-group">
+              <label>Email Address</label>
+              <input type="email" placeholder="your@email.com" required />
+            </div>
+            <div class="form-group">
+              <label>Message</label>
+              <textarea
+                placeholder="Tell us about your interest in OSINT..."
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+          </form>
+          <p
+            style="
               color: var(--text-secondary);
               font-size: 0.9rem;
               margin-top: 1.5rem;
-            ">
-          <strong>Email:</strong> info@osint-academy.com |
-          <strong>Phone:</strong> +1 (555) 123-4567
+            "
+          >
+            <strong>Email:</strong> info@osint-academy.com |
+            <strong>Phone:</strong> +1 (555) 123-4567
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="dev">
+      <h1>Developers</h1>
+
+      <section class="aboutdev">
+        <div class="info">
+          <img src="Images/sohim.jpg" alt="" />
+          <h3>Sohim Veerani</h3>
+          <p>BS Computer Science • Frontend Developer</p>
+          <p>FAST - NUCES</p>
+
+          <div class="glow-line"></div>
+
+          <div class="media-icons">
+            <a href="https://github.com/sohimveerani-143"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a href="https://sohim.veerani143@gmail.com"
+              ><i class="fas fa-envelope"></i
+            ></a>
+            <a href="http://www.linkedin.com/in/sohimsuthar"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="info">
+          <img src="Images/hamza.jfif" alt="" />
+          <h3>S M Hamza Raza Zaidi</h3>
+          <p>BS Computer Science • Frontend Developer</p>
+          <p>FAST - NUCES</p>
+
+          <div class="glow-line"></div>
+
+          <div class="media-icons">
+            <a href="https://github.com/smhamzarazazaidi"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a href="https://hamzaraza.3964@gmail.com"
+              ><i class="fas fa-envelope"></i
+            ></a>
+            <a href="https://smhamzarazazaidi.github.io/SM-Hamza-Raza/"
+              ><i class="fab fa-chrome"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/s-m-hamza-raza-zaidi-39919427a/"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="info">
+          <img src="Images/hamza.jfif" alt="" />
+          <h3>Shiraz Ali</h3>
+          <p>BS Computer Science • Frontend Developer</p>
+          <p>FAST - NUCES</p>
+
+          <div class="glow-line"></div>
+
+          <div class="media-icons">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fas fa-envelope"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <footer>
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h4>Academy</h4>
+          <a href="#">Courses</a>
+          <a href="#">Certifications</a>
+          <a href="#">Resources</a>
+          <a href="#">Blog</a>
+        </div>
+        <div class="footer-section">
+          <h4>Company</h4>
+          <a href="#">About Us</a>
+          <a href="#">Team</a>
+          <a href="#">Careers</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="footer-section">
+          <h4>Legal</h4>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Code of Conduct</a>
+          <a href="#">Disclaimer</a>
+        </div>
+        <div class="footer-section">
+          <h4>Connect</h4>
+          <a href="#">Twitter</a>
+          <a href="#">LinkedIn</a>
+          <a href="#">Discord</a>
+          <a href="#">GitHub</a>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          &copy; 2025 OSINT Academy. All rights reserved. | Empowering ethical
+          intelligence gathering worldwide.
         </p>
       </div>
-    </div>
-  </section>
+    </footer>
 
+    <script>
+      // Mobile menu toggle
+      document.querySelector('.mobile-menu-toggle').addEventListener('click', function() {
+        document.querySelector('.inner_header').classList.toggle('active');
+      });
 
-  <section class="aboutdev">
-
-    <div class="info">
-      <img src="Images/sohim.jpg" alt="">
-      <h3>Sohim Veerani</h3>
-      <p>BS Computer Science • Frontend Developer</p>
-      <p>FAST - NUCES</p>
-
-      <div class="glow-line"></div>
-
-      <div class="media-icons">
-        <a href="#"><i class="fab fa-github"></i></a>
-        <a href="#"><i class="fab fa-chrome"></i></a>
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-      </div>
-    </div>
-
-    <div class="info">
-      <img src="Images/hamza.jfif" alt="">
-      <h3>S M Hamza Raza Zaidi</h3>
-      <p>BS Computer Science • Frontend Developer</p>
-      <p>FAST - NUCES</p>
-
-      <div class="glow-line"></div>
-
-      <div class="media-icons">
-        <a href="#"><i class="fab fa-github"></i></a>
-        <a href="#"><i class="fab fa-chrome"></i></a>
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-      </div>
-    </div>
-
-    <div class="info">
-      <img src="Images/hamza.jfif" alt="">
-      <h3>Shiraz Ali</h3>
-      <p>BS Computer Science • Frontend Developer</p>
-      <p>FAST - NUCES</p>
-
-      <div class="glow-line"></div>
-
-      <div class="media-icons">
-        <a href="#"><i class="fab fa-github"></i></a>
-        <a href="#"><i class="fab fa-chrome"></i></a>
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-      </div>
-    </div>
-
-  </section>
-
-
-
-
-
-  <footer>
-    <div class="footer-grid">
-      <div class="footer-section">
-        <h4>Academy</h4>
-        <a href="#">Courses</a>
-        <a href="#">Certifications</a>
-        <a href="#">Resources</a>
-        <a href="#">Blog</a>
-      </div>
-      <div class="footer-section">
-        <h4>Company</h4>
-        <a href="#">About Us</a>
-        <a href="#">Team</a>
-        <a href="#">Careers</a>
-        <a href="#">Contact</a>
-      </div>
-      <div class="footer-section">
-        <h4>Legal</h4>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Service</a>
-        <a href="#">Code of Conduct</a>
-        <a href="#">Disclaimer</a>
-      </div>
-      <div class="footer-section">
-        <h4>Connect</h4>
-        <a href="#">Twitter</a>
-        <a href="#">LinkedIn</a>
-        <a href="#">Discord</a>
-        <a href="#">GitHub</a>
-      </div>
-    </div>
-    <div class="copyright">
-      <p>
-        &copy; 2025 OSINT Academy. All rights reserved. | Empowering ethical
-        intelligence gathering worldwide.
-      </p>
-    </div>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
-</body>
-
+      // Close menu when clicking on a link
+      document.querySelectorAll('.nav-list a').forEach(link => {
+        link.addEventListener('click', function() {
+          document.querySelector('.inner_header').classList.remove('active');
+        });
+      });
+    </script>
+  </body>
 </html>
