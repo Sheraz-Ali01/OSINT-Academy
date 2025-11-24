@@ -185,7 +185,7 @@ nav {
   font-weight: 600;
 }
 .btn:hover{
-  background: rgb(69, 0, 134);
+  background:rgba(89, 6, 105, 0.901);
   color: white;
 }
 /* Hidden*/
@@ -229,4 +229,9 @@ nav {
 
 .card.expanded h1 {
   margin-top: 0;
+}
+
+.card:hover{
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(89, 6, 105, 0.901);
 }
