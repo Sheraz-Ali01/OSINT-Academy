@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,74 +10,113 @@
   <link rel="stylesheet" href="style/tools.css" /> <!-- Adjust path if needed -->
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 </head>
+
 <body class="tools-page">
 
-    <header class="header">
-      <div class="logo">
-        <h1>
-          <a href="index.html"
-            ><b>OSINT<span> Academy</span></b></a>
-        </h1>
-      </div>
-      <div class="inner_header">
-        <nav>
-          <ul class="nav-list">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="resources.html">Resources</a></li>
-            <li><a href="tools.html">Tools</a></li>
-            <li><a href="#contact">Contact Us</a></li>
-          </ul>
-        </nav>
-      </div>
-      <a href="#"><button class="contact-btn">Let's Talk 📞</button></a>
-    </header>
+  <header class="header">
+    <div class="logo">
+      <h1>
+        <a href="index.html"><b>OSINT<span> Academy</span></b></a>
+      </h1>
+    </div>
+    <div class="inner_header">
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="courses.html">Resources</a></li>
+
+          <li><a href="tools.html">Tools</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+    <a href="#"><button class="contact-btn">Let's Talk 📞</button></a>
+  </header>
 
 
 
   <div class="card-container">
     <div class="card">
       <img src="Images/Maltego-Logo.jpg" alt="">
-      <h1 style="color: black;"><b>Maltego</b></h1>
-      <p>Tool</p>
-      <a href="*" class="btn">Learn More -></a>
+      <div class="card-content">
+        <h1 style="color: black;"><b>Maltego</b></h1>
+        <p>Tool</p>
+        <p class="description">Maltego is a comprehensive tool for graphical link analyses that offers real-time data
+          mining and information gathering, as well as the representation of this information on a node-based graph,
+          making patterns and multiple order connections easily identifiable.</p>
+        <a class="btn">Learn More -></a>
+      </div>
     </div>
     <div class="card">
       <img src="Images/shodan.jpg" alt="">
-      <h1 style="color: black;"><b>Shodan</b></h1>
-      <p>Tool</p>
-      <a href="*" class="btn">Learn More -></a>
+      <div class="card-content">
+        <h1 style="color: black;"><b>Shodan</b></h1>
+        <p>Tool</p>
+        <p class="description">Shodan is a search engine that lets the user find specific types of computers (webcams,
+          routers, servers, etc.) connected to the internet using a variety of filters. Some have also described it as a
+          search engine of service banners.</p>
+        <a class="btn">Learn More -></a>
+      </div>
     </div>
     <div class="card">
       <img src="Images/harvester.jpg" alt="">
-      <div class="inner-block">
-      <h1 style="color: black;"><b>Harvester</b></h1>
-      <p>Tool</p>
-      <a href="*" class="btn">Learn More -></a>
+      <div class="card-content">
+        <h1 style="color: black;"><b>Harvester</b></h1>
+        <p>Tool</p>
+        <p class="description">TheHarvester is a tool for gathering e-mail accounts, subdomain names, virtual hosts,
+          open ports/ banners, and employee names from different public sources (search engines, pgp key servers).</p>
+        <a class="btn">Learn More -></a>
       </div>
     </div>
-     <div class="card">
+    <div class="card">
       <img src="Images/spider.jpg" alt="">
-      <h1 style="color: black;"><b>Spider</b></h1>
-      <p>Tool</p>
-      <a href="*" class="btn">Learn More -></a>
+      <div class="card-content">
+        <h1 style="color: black;"><b>Spider</b></h1>
+        <p>Tool</p>
+        <p class="description">SpiderFoot is an open source intelligence (OSINT) automation tool. It integrates with
+          just about every data source available and utilises a range of methods for data analysis, making that data
+          easy to navigate.</p>
+        <a class="btn">Learn More -></a>
+      </div>
     </div>
     <div class="card">
       <img src="Images/hunter.jpg" alt="">
-      <h1 style="color: black;"><b>Hunter.io</b></h1>
-      <p>Tool</p>
-      <a href="*" class="btn">Learn More -></a>
+      <div class="card-content">
+        <h1 style="color: black;"><b>Hunter.io</b></h1>
+        <p>Tool</p>
+        <p class="description">Hunter.io is an email hunter and verifier that lets you find professional email addresses
+          in seconds and connect with the people that matter for your business.</p>
+        <a class="btn">Learn More -></a>
+      </div>
     </div>
     <div class="card">
       <img src="Images/recon.png" alt="">
-      <h1 style="color: black;"><b>Recon‑ng</b></h1>
-      <p>Tool</p>
-      <a href="*" class="btn">Learn More -></a>
+      <div class="card-content">
+        <h1 style="color: black;"><b>Recon‑ng</b></h1>
+        <p>Tool</p>
+        <p class="description">Recon-ng is a full-featured Web Reconnaissance framework written in Python. Complete with
+          independent modules, database interaction, built in convenience functions, interactive help, and command
+          completion, Recon-ng provides a powerful environment in which open source web-based reconnaissance can be
+          conducted quickly and thoroughly.</p>
+        <a class="btn">Learn More -></a>
+      </div>
     </div>
   </div>
 
- 
 
+  <script>
+    const btns = document.querySelectorAll(".btn");
+    btns.forEach(btn => {
+      btn.addEventListener("click", (e) => {
+        e.preventDefault();
+        const card = btn.closest(".card");
+        card.classList.toggle("expanded");
+      });
+    });
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
