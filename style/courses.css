@@ -171,7 +171,6 @@
      background: var(--bg-card);
      border: 1px solid var(--border);
      box-shadow: 0 15px 40px rgba(47, 6, 105, 0.901);
-
      border-radius: 12px;
      padding: 24px;
      transition: all 0.3s ease;
@@ -255,6 +254,8 @@
      display: grid;
      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
      gap: 24px;
+         padding: 40px 50px;
+
  }
 
  /* Footer    */
